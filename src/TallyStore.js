@@ -40,7 +40,7 @@ class TallyStore extends EventEmitter {
         return Object.assign({}, tally);
     }
     addChangeListener(callback) {
-        this.addLListener('CHANGE', callback);
+        this.addListener('CHANGE', callback);
     }
     removeChangeListener(callback) {
         this.removeChangeListener('CHANGE', callback);
